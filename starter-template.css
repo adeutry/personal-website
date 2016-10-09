@@ -27,7 +27,7 @@ a.navbar-brand,
 a.navbar-brand {
 	font-family: Antic;
     font-weight: 600;
-    font-size: 23px;	
+    font-size: 21.2px;	
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
@@ -38,23 +38,32 @@ a.navbar-brand {
     color: #858585;
     text-shadow: none;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 13px;
+    padding: 21px 0px 0px 19px;
+}
+
+#navbar .navbar-nav a:hover {
+	color: black;
 }
 
 #user-bio {
-	padding: 10px 10px 10px 50px;
+	padding: 10px 0px 10px 50px;
 }
 
 #bio-container {
 	display: flex;
     align-items: center;
+    margin-bottom: 50px;
 }
 
-#user-bio-text {
+#user-bio-text,
+#work-text-para {
 	display: block;
-    font-family: Arimo;
-    line-height: 24px;
-    text-align: justify;
+    font-family: Roboto Slab;
+    line-height: 22px;
+    font-size: 13px;
+    /* text-align: justify; */
+    padding-left: 0px;
 }
  
 img#user-pic {
@@ -66,6 +75,42 @@ img#user-pic {
 .navbar .inner-border {
 	display: inline-block;
     width: 100%;
-    border-bottom: 1px solid #d8d8d8;
+    
     padding-bottom: 14px;
+}
+
+.navbar .inner-border {
+	border-bottom: 1px solid #d8d8d8;
+}
+
+#section-work {
+	padding: 10px 6px 10px 33px;
+}
+
+#work-text {
+	height: 120px;
+	padding-left: 0px;
+}
+
+#work-text-para {
+	padding-right: 60px;
+}
+
+#work-pic-container {
+	height: 46%;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/32/Temple_University_logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Bootstrap overrides */
+@media (min-width: 992px){
+	.container {
+	    width: 900px;
+	}	
+}
+
+.h1, h1 {
+    font-size: 20px;
+    margin-top: 0px;
 }
